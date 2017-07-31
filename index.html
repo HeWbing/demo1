@@ -5,7 +5,7 @@
 <title>Hello World!</title>
 
 <link href="css/index_style.css" rel="stylesheet" type="text/css">
-<script src="http://www.jq22.com/jquery/jquery-1.10.2.js"></script>
+<script src="http://apps.bdimg.com/libs/jquery/2.1.4/jquery.min.js"></script>
 <style>
 
 .gv1{
@@ -164,10 +164,7 @@ function animation() {
   window.requestAnimationFrame(animation);
 }
 
-animation();
-</script>
-
-<script type="text/javascript">
+//统计访问人数
 var caution=false
 function setCookie(name,value,expires,path,domain,secure) 
 {
@@ -232,9 +229,13 @@ else
  visits=parseInt(visits)+1;
 }  
 setCookie("counter", visits, now);
+$("#visitSum").html(visits);
 //document.getElementById('visitSum').html(visits);
-alert("您是到访的第" + visits + "位用户！")
+
+animation();
 </script>
+
+
 
 </body>
 </html>
